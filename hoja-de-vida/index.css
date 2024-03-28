@@ -1,0 +1,219 @@
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.div_principal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.div_content_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+}
+
+.div_content_img>img {
+  width: 100%;
+  height: 100%;
+}
+
+main.first {
+  display: flex;
+  width: 45%;
+  height: 95%;
+  background-color: transparent;
+  margin: 1rem;
+}
+
+main.second {
+  display: flex;
+  width: auto;
+  height: 95%;
+  background-color: transparent;
+  margin: 1rem;
+}
+
+main.first div.div_content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+main.second div.div_content_second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-left: 5rem;
+}
+
+main.second div.div_content_second  > div.div_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+aside.first-aside {
+  display: flex;
+  height: 45%;
+}
+
+.div_content_info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+
+.div_aside_div_img {
+  display: flex;
+  gap: 5rem;
+  height: 70%;
+  width: 100%;
+}
+
+.div_img_perfil {
+  height: 200px;
+  width: 200px;
+}
+
+.div_asi_div_text {
+  width: auto;
+  height: 10%;
+}
+
+div.div_aside_div_img>div>img {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  border: 3px solid #000;
+}
+
+aside.second-aside {
+  display: flex;
+  height: 55%;
+}
+
+.div_aside_div_text {
+  display: grid;
+  height: 100%;
+  gap: 10px;
+}
+
+.text-title {
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.5;
+  color: #00829b;
+}
+
+.text-subtitle {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0.5;
+  color: #444648;
+}
+
+.div_aside_div_content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+  background-color: #f5f5f5;
+}
+
+.div_ul {
+  height: 100%;
+  width: 45%;
+  display: grid;
+}
+
+.div_ul ul {
+  height: 100%;
+  display: grid;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.div_ul ul li {
+  display: grid;
+  justify-items: center;
+  height: 100%;
+  align-content: center;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 2px;
+}
+
+.div_ul ul li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: #00829b;
+  color: #00829b;
+}
+
+.div_contet_about {
+  height: 100%;
+  width: fit-content;
+  flex-direction: column;
+  display: flex;
+  padding: 0 2rem;
+  row-gap: 1rem;
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+
+.mi_hoja_vida_text {
+  font-size: 28px;
+  color: white;
+  text-align: center;
+}
+
+.show {
+  display: block;
+}
+
+.display {
+  display: none !important;
+}
