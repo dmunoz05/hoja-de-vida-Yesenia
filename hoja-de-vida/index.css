@@ -16,6 +16,7 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: center;
 }
 
 .div_content_img {
@@ -46,7 +47,7 @@ main.first {
 
 main.second {
   display: flex;
-  width: auto;
+  width: 55%;
   height: 95%;
   background-color: transparent;
   margin: 1rem;
@@ -58,23 +59,22 @@ main.first div.div_content {
   height: 100%;
   z-index: 2;
   border-radius: 10px;
-  background-color: #f5f5f5;
+  background-color: #e0e0e0;
 }
 
 main.second div.div_content_second {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: relative;
   height: 100%;
+  width: 100%;
   z-index: 2;
   border-radius: 10px;
   background-color: transparent;
-  margin-left: 5rem;
 }
 
-main.second div.div_content_second  > div.div_content {
+main.second div.div_content_second>div.div_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,7 +156,7 @@ aside.second-aside {
   height: 100%;
   width: 100%;
   gap: 20px;
-  background-color: #f5f5f5;
+  background-color: #e0e0e0;
 }
 
 .div_ul {
@@ -206,12 +206,81 @@ aside.second-aside {
 
 .mi_hoja_vida_text {
   font-size: 28px;
-  color: white;
+  color: #00829b;
   text-align: center;
 }
 
-.show {
-  display: block;
+div.content_section_transparent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+div.content_section {
+  flex-direction: column;
+  gap: 1rem;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+div.content_section>div {
+  position: relative;
+  height: 88%;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+}
+
+div.content_section>div+div {
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  display: grid;
+  align-items: center;
+  height: 12%;
+}
+
+.title_section {
+  color: #00829b;
+  text-align: center;
+}
+
+#closed-menu {
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #00829b;
+  background: transparent;
+}
+
+
+/* Background */
+
+.div_background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #1E293B;
+}
+
+.div_intern_background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(100px);
+  background-color: #F472B6;
+  background-size: 20px 20px;
+  background-image: radial-gradient(rgba(255,255,255,0.2) 1px, rgba(0,9,29,0.2) 1px);
+  opacity: 0.2;
 }
 
 .display {
