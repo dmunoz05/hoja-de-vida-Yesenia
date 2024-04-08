@@ -208,6 +208,9 @@ aside.second-aside {
   font-size: 28px;
   color: #00829b;
   text-align: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 div.content_section_transparent {
@@ -244,6 +247,7 @@ div.content_section>div+div {
 }
 
 .title_section {
+  font-size: 28px;
   color: #00829b;
   text-align: center;
 }
@@ -279,10 +283,126 @@ div.content_section>div+div {
   filter: blur(100px);
   background-color: #F472B6;
   background-size: 20px 20px;
-  background-image: radial-gradient(rgba(255,255,255,0.2) 1px, rgba(0,9,29,0.2) 1px);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2) 1px, rgba(0, 9, 29, 0.2) 1px);
   opacity: 0.2;
 }
 
 .display {
   display: none !important;
+}
+
+
+/* Experiencia */
+
+.content_experience {
+  height: 95%;
+  display: grid;
+  padding: 3rem 1rem;
+}
+
+.lineatemp {
+  position: relative;
+  width: 750px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.fila {
+  display: flex;
+  margin: 10px 0;
+  padding: 10px 0;
+  justify-content: start;
+  border-bottom: 2px solid lightgray;
+  position: relative;
+}
+
+.fila .disco {
+  width: 36px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.fila .disco:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(505 - 2px);
+  height: 100%;
+  width: 3px;
+  background: #00829b;
+  z-index: -1;
+}
+
+.fila:first-child .disco:after {
+  height: 50%;
+  top: 50%;
+}
+
+.fila:last-child .disco:after {
+  height: 50%;
+}
+
+.fila .disco>div {
+  width: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: #00829b;
+  box-sizing: border-box;
+}
+
+.fila:hover .disco>div {
+  border: 3px solid #00829b;
+  background: white;
+  cursor: pointer;
+}
+
+.fila div:nth-of-type(2) {
+  width: 25%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.fila div:nth-of-type(3) {
+  width: 60%;
+  padding: 4px;
+}
+
+.info-experience {
+  display: grid;
+  gap: 10px;
+  width: auto;
+}
+
+
+/* Estudios */
+
+.content_studies {
+  height: 95%;
+  display: grid;
+  padding: 3rem 2rem;
+}
+
+.info-studies {
+  display: grid;
+  gap: 30px;
+  width: auto;
+}
+
+
+/* Contacto */
+
+.info-contact {
+  display: grid;
+  gap: 30px;
+  width: auto;
+}
+
+.fila_align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
